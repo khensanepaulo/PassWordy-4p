@@ -28,7 +28,6 @@ public class PasswordResource {
         byte[] decoded = Base64.getDecoder().decode(passwordEntity.getSenha());
         String decodedString = new String(decoded);
         passwordEntity.setSenha(decodedString);
-
         return passwordEntity;
     }
 
